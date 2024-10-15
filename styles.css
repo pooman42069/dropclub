@@ -6,8 +6,17 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h2 {
+    font-size: 15px;
+    color: white;
+}
+
+.container2 {
+    transition: transform 0.3s ease;
+}
 .container {
     text-align: center;
 }
@@ -18,16 +27,9 @@ a {
 }
 
 .glow {
-    font-size: 2em;
+    font-size: 40px;
     color: white;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 
-                 0 0 10px rgba(255, 127, 0, 0.7), 
-                 0 0 15px rgba(255, 255, 0, 0.7), 
-                 0 0 20px rgba(0, 255, 0, 0.7), 
-                 0 0 25px rgba(0, 0, 255, 0.7), 
-                 0 0 30px rgba(75, 0, 130, 0.7), 
-                 0 0 35px rgba(148, 0, 211, 0.7);
-    animation: rainbowGlow 10s infinite alternate;
+    animation: rainbowGlow 7s infinite alternate;
     transition: transform 0.3s ease;
 }
 
@@ -35,13 +37,17 @@ a {
     transform: scale(1.1);
 }
 
+.container2:hover {
+    transform: scale(1.1);
+}
+
 @keyframes rainbowGlow {
-    0% { text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); }
-    14% { text-shadow: 0 0 10px rgba(255, 127, 0, 0.7); }
-    28% { text-shadow: 0 0 15px rgba(255, 255, 0, 0.7); }
-    42% { text-shadow: 0 0 20px rgba(0, 255, 0, 0.7); }
-    57% { text-shadow: 0 0 25px rgba(0, 0, 255, 0.7); }
-    71% { text-shadow: 0 0 30px rgba(75, 0, 130, 0.7); }
-    85% { text-shadow: 0 0 35px rgba(148, 0, 211, 0.7); }
-    100% { text-shadow: 0 0 40px rgba(255, 0, 0, 0.7); }
+    0% { text-shadow: 0 0 6px rgb(255, 0, 0); }
+    14% { text-shadow: 0 0 6px rgb(255, 128, 0); }
+    28% { text-shadow: 0 0 6px rgba(255, 255, 0); }
+    42% { text-shadow: 0 0 6px rgba(0, 255, 0); }
+    57% { text-shadow: 0 0 6px rgba(0, 0, 255); }
+    71% { text-shadow: 0 0 6px rgba(75, 0, 130); }
+    85% { text-shadow: 0 0 6px rgba(148, 0, 211); }
+    100% { text-shadow: 0 0 6px rgba(255, 0, 0); }
 }
