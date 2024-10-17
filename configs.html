@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dropclub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
     <div class="container">
         <h1 class="glow"><a href="index.html">dropclub.lol</a></h1>
@@ -15,30 +19,9 @@
         <div class="container2">
             <h2><a href="https://discord.dropclub.lol/">discord</a></h2> 
         </div>
-        
-    </div>
 
-<!--     <audio autoplay loop> -->
-<!--     <source src="song.mp3" type="audio/mpeg"> -->
-    </audio>
 </body>
 
-<script>
-    document.addEventListener('mousemove', function(e) {
-        const tracer = document.createElement('div');
-        tracer.className = 'tracer';
-        document.body.appendChild(tracer);
-        tracer.style.left = e.pageX + 'px';
-        tracer.style.top = e.pageY + 'px';
-
-        setTimeout(() => {
-            tracer.style.opacity = '0';
-        }, 0);
-
-        setTimeout(() => {
-            tracer.remove();
-        }, 500);
-    });
-</script>
+<script src="main.js"></script>
 
 </html>

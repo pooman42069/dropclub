@@ -6,7 +6,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: consolas, monaco, "bitstream vera sans mono", "courier new", courier, monospace;
+}
+
+h1  {
+
+    font-size:40px;
+    color:white;
+
 }
 
 h1:hover::after {
@@ -40,13 +47,12 @@ a {
 }
 
 .glow {
-    font-size: 40px;
-    color: white;
     animation: rainbowGlow 3s infinite alternate;
-    transition: transform 0.3s ease;
+    
 }
 
 .glow:hover {
+    transition: transform 0.3s ease;
     transform: translateY(-20%) scale(1.1);
 }
 
@@ -54,24 +60,57 @@ a {
     transform: scale(1.1);
 }
 
+.mute {
+    position: absolute;
+    color:white;
+    bottom: 0.5%;
+    left: 0.5%;
+    animation: rainbowGlow 3s infinite alternate;
+}
+
+.mute:hover {
+    transition: transform 0.3 ease;
+    transform: translateY(-10%) scale(1.1);
+}
+
 .tracer {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     animation: crainbowGlow 0.7s infinite alternate;
     pointer-events: none;
     transition: opacity 3s ease;
 }
+
+.missedu {
+    position: absolute;
+    font-size: 15px;
+    font-family: consolas, monaco, "bitstream vera sans mono", "courier new", courier, monospace;
+    animation: rainbowGlow 2s infinite alternate;
+    color: white;
+    transition: transform 3s, opacity 1s;
+}
+
+.number {
+    position: absolute;
+    transform: translateY(-110%) translateX(100%);
+    font-family: consolas, monaco, "bitstream vera sans mono", "courier new", courier, monospace;
+    font-size: 15px;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    color: white;
+    transition: transform 1s, opacity 1s;
+}
+
 @keyframes rainbowGlow {
-    0% { text-shadow: 0 0 6px rgb(255, 0, 0); }
-    14% { text-shadow: 0 0 6px rgb(255, 128, 0); }
-    28% { text-shadow: 0 0 6px rgb(255, 255, 0); }
-    42% { text-shadow: 0 0 6px rgb(0, 255, 0); }
-    57% { text-shadow: 0 0 6px rgb(0, 0, 255); }
-    71% { text-shadow: 0 0 6px rgb(75, 0, 130); }
-    85% { text-shadow: 0 0 6px rgb(148, 0, 211); }
-    100% { text-shadow: 0 0 6px rgb(255, 0, 0); }
+    0% { text-shadow: 0 0 10px rgb(255, 0, 0); }
+    14% { text-shadow: 0 0 10px rgb(255, 128, 0); }
+    28% { text-shadow: 0 0 10px rgb(255, 255, 0); }
+    42% { text-shadow: 0 0 10px rgb(0, 255, 0); }
+    57% { text-shadow: 0 0 10px rgb(0, 0, 255); }
+    71% { text-shadow: 0 0 10px rgb(75, 0, 130); }
+    85% { text-shadow: 0 0 10px rgb(148, 0, 211); }
+    100% { text-shadow: 0 0 10px rgb(255, 0, 0); }
 }
 
 @keyframes crainbowGlow {
